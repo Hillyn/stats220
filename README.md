@@ -8,7 +8,7 @@
 * I am taking STATS 220 because
   + I have a little coding experience and
   + want to learn more about it.
-- I am interested in learning about *coding*，because
+- I am *interested in learning about coding*，because
   1. I think it is very useful
   2. It looks like something that smart people would do
   3. I want to be the smart person

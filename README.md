@@ -15,4 +15,4 @@
   
 [Click here to view what coding jobs there are](https://www.indeed.com/career-advice/finding-a-job/types-of-coding-jobs)
 
-A meme that captures how I currently feel about my university studies is ![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmd3eWtyZTFzYnF3czI5dWF1ZTgyY3htaHV5c2JzbnFxcHpnNmM0cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d5mI2F3MxCTJu/giphy.gif)
+A meme that captures how I currently feel about my university studies is ![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmEzN2JobjA4YjRlemt5MjlndDF2bmx6Zml5eGJsMXFhZGs4OHdjdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HtYsYjPsw1nVu/giphy.gif)

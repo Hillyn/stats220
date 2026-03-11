@@ -12,5 +12,7 @@
   1. I think it is very useful
   2. It looks like something that smart people would do
   3. I want to be the smart person
+  
 [Click here to view what coding jobs there are](https://www.indeed.com/career-advice/finding-a-job/types-of-coding-jobs)
-A meme that captures how I currently feel about my university studies is ![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHI1Z3Rqc3N1ZnluOTNpb2ZwemRiNzl3N25zenlza3BrcG1kOG5zNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/iAIwyKeZlKBgIpH4TZ/giphy.gif)
+
+A meme that captures how I currently feel about my university studies is ![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN21vMWR5ZDF1YjJrbGVwMXlyNHVsM3czdWZybnQ3djVlMWw4Z2QyciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/a3IWyhkEC0p32/giphy.gif)

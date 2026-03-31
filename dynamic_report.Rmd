@@ -49,7 +49,7 @@ daily_max <- max(latest_data$total_emails)
 
 daily_min <- min(latest_data$total_emails)
 
-daily_mean <- mean(latest_data$total_emails)
+daily_mean <- round(mean(latest_data$total_emails),2)
 
 ```
 

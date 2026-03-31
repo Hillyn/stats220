@@ -73,6 +73,7 @@ ggplot(data = latest_data) +
 
 
 ```
+
 <br>
 
 ```{r}
@@ -88,6 +89,7 @@ ggplot(data = latest_data) +
      y="Number of Emails")
 
 ```
+
 <br>
 
 ```{r}

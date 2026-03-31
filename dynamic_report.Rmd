@@ -1,0 +1,106 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+
+```
+
+
+```{css}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-weight: 900; color: #8686AC
+}
+```
+
+
+```{css}
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Cinzel:wght@400..900&display=swap');
+
+p {
+  font-family: 'Changa', sans-serif
+}
+```
+
+
+## The daily number of emails received in two email addresses, considering the categories of the emails.
+
+This analysis aims to compare the number and types of emails received by personal and school addresses, identifying any noticeable differences in email frequency and category distribution over time.
+
+
+```{r}
+library(tidyverse)
+
+csv_file <- "https://docs.google.com/spreadsheets/d/e/2PACX-1vSonJKLDS4YZ9bn-cacFyUGhOlDFZguHG8ESZ5pHg8a2FQ_WhIDKdnUEb4t-GvpbiLO-oZDJAdJBxei/pub?gid=150202961&single=true&output=csv"
+
+logged_data <- read_csv (csv_file)
+
+latest_data <- logged_data %>%
+
+ rename(date_of_emails = 2, total_emails = 3, major_emails =4, more_email_address= 5, first_email_time= 6, first_email_type= 7, last_email_time= 8, last_email_type= 9, rating_scale= 10)
+
+daily_max <- max(latest_data$total_emails)
+
+daily_min <- min(latest_data$total_emails)
+
+daily_mean <- mean(latest_data$total_emails)
+
+```
+
+The daily maximum number of emails is `r daily_max`.
+
+The daily minimum number of emails is `r daily_min`.
+
+The daily mean number of emails is `r daily_mean`.
+
+
+```{r}
+ggplot(data = latest_data) +
+  geom_bar(aes(x = major_emails), fill=c("#4A4A4A","#CBCBC0","#FFFFE3","#6D8196","#7D99AA")) +
+  
+  labs(title="Bar Chart for the Major Email Categories",
+     subtitle= "Comparing the daily emails received in different categories",
+     caption = "Souce: Email Observation Form",
+     x= "Email Categories",
+     y="Number of Emails")
+
+
+```
+
+```{r}
+
+ggplot(data = latest_data) +
+  geom_bar(aes(x = more_email_address), fill =c (
+    "#CCFF00","#191970" )) +
+  
+  labs(title="Bar Chart for Two Email Addresses Comparison",
+     subtitle= "Comparison of the number of daily emails received in two different email addresses",
+     caption = "Souce: Email Observation Form",
+     x= "Email Addresses",
+     y="Number of Emails")
+
+```
+
+```{r}
+latest_data %>%
+  ggplot() +
+  geom_bar(aes(y= more_email_address, fill= major_emails)) +
+  scale_fill_manual(values= c (
+   "#FA994A", "#B7410E","#FFCE1B","#069494","#194454"
+  )) +
+  
+  labs(title="Bar Chart Showing Email Categories for Two Accounts",
+       subtitle= "Comparing the daily number of emails received in two email addresses, \nconsidering the categories of the emails",
+       caption = "Souce: Email Observation Form",
+       x= "Number of Emails",
+       y="Email Addresses")
+
+```
+
+
+![](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)

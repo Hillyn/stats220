@@ -32,6 +32,7 @@ p {
 
 This analysis aims to compare the number and types of emails received by personal and school addresses, identifying any noticeable differences in email frequency and category distribution over time.
 
+<br>
 
 ```{r}
 library(tidyverse)
@@ -58,6 +59,7 @@ The daily minimum number of emails is `r daily_min`.
 
 The daily mean number of emails is `r daily_mean`.
 
+<br>
 
 ```{r}
 ggplot(data = latest_data) +
@@ -71,6 +73,7 @@ ggplot(data = latest_data) +
 
 
 ```
+<br>
 
 ```{r}
 
@@ -85,6 +88,7 @@ ggplot(data = latest_data) +
      y="Number of Emails")
 
 ```
+<br>
 
 ```{r}
 latest_data %>%
@@ -103,4 +107,3 @@ latest_data %>%
 ```
 
 
-![](https://c.tenor.com/-qBsG1HwR4oAAAAC/tenor.gif)
